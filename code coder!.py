@@ -102,11 +102,22 @@ result = list(times_dict.keys())
 
 # less in end
 
+
+def check()
+
 for a, b in immediate:
 
-    priority = [a, b]
-    i1 = result.index(priority[0])
-    i2 = result.index(priority[1])
+    items = {a: times_dict[a], b: times_dict[b]}
+    priority = list(sorted(items.items(), key=lambda one: one[1]))
+
+    small_in = result.index(priority[0])
+    big_in = result.index(priority[1])
+
+    if small_in > big_in:
+        result.insert(small_in + 1, result.pop(big_in))
+    elif big_in >= small_in:
+        result.insert(small_in - 1, result.pop(big_in))
+
 
 #    if priority[0] > priority[1] and index_0 < index_1:
 #        pass
