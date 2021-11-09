@@ -1,7 +1,5 @@
 import string
 
-# 123
-
 
 def calculatein(listed, dictionary, imm, non_imm):
 
