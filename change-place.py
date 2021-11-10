@@ -49,6 +49,9 @@ def change_place(thelist, start, destiny):
     # SOL and EOL finished
     # Start Of Line
 
+# یادم رفته بود که اگر شروع از اولین عنصر بود یا اخرین عنصر شروع
+# در نظر بگیرم
+
     if 0 < destiny < (len(thelist)-1):
 
         sttd = thelist[: start] + thelist[start+1: destiny+1]
@@ -64,7 +67,8 @@ while x != 'end':
     c = input('list start destiny: ')
     c = c.strip().split()
 
-    mylist = list(c[0])
+    mylist = c[0][1:-1].split(',')
+
     start = int(c[1])
     destiny = int(c[2])
 

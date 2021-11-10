@@ -104,13 +104,6 @@ result = list(times_dict.keys())
 
 # less in end
 
-
-def check():
-    pass
-
-
-print('hello word')
-
 for a, b in immediate:
 
     items = {a: times_dict[a], b: times_dict[b]}
@@ -125,8 +118,30 @@ for a, b in immediate:
     elif big_in >= small_in:
         result.insert(small_in - 1, result.pop(big_in))
 
+# more in end
 
-#    if priority[0] > priority[1] and index_0 < index_1:
+for a, b in non_immediate:
+
+    items = {a: times_dict[a], b: times_dict[b]}
+    priority = list(sorted(items.items(), key=lambda one: one[1]))
+
+    small_in = result.index(priority[0])
+    big_in = result.index(priority[1])
+
+    if small_in > big_in:  # it means smaller is in end of order
+        # my_index_s = result.index(priority[0])
+        # b_a_n = result[0]
+        if (small_in,) or () in immediate:
+            pair1 = []
+
+        elif () or () in immediate:
+            pare2 = []
+
+    elif big_in >= small_in:
+        result.insert(small_in - 1, result.pop(big_in))
+
+
+# if priority[0] > priority[1] and index_0 < index_1:
 #        pass
 #
 #    elif priority[0] > priority[1] and index_0 > index_1:
