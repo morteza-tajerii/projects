@@ -1,3 +1,6 @@
+import math
+
+
 def calculatein(main_list, dictionary, imm, non_imm):
 
     time_loss = 0
@@ -46,8 +49,9 @@ work_time = work_time.strip().split()
 
 print(work_time)
 
-string = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
-string += ['13', '14', '15']
+string = [str(i) for i in range(1, 16)]
+print(string)
+
 count = 0
 work_dict = dict()
 
@@ -60,7 +64,6 @@ print(work_dict)
 prereq = []
 
 for x in range(0, int(n_prereq)):
-
     pr = input('enter prerequirments: ')
     pr = pr.strip().split()
     prereq.append((pr[0], pr[1]))
@@ -96,6 +99,14 @@ def sort_imm(main_list, imm):
 
 def sort_non_imm(main_list, non_imm):
     pass
+
+
+with open('/tmp/all.list', 'a') as file:
+    elements = [i for i in list(work_dict.keys())]
+    print(elements)
+    for x in elements:
+        count = math.factorial(len(elements) - 1)
+        print(count)
 
 
 # یک راه پیدا کردم که شاید جواب بده.
