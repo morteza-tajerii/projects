@@ -1,0 +1,240 @@
+h1{
+    color: #141414;
+    background-color: #e9edc9;
+    margin: 12px;
+    margin-bottom: 0px;
+    padding: 3px;
+}
+
+small {
+    color: #fff;
+    background-color: hsl(74, 22%, 65%);
+    margin: 4px 12px 0px 12px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#headArea{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color: #3b3b3b;
+    margin: 10px 12px;
+    padding: 5px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+}
+
+a{
+    text-decoration: none;
+    color: #3b3b3b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:hover{
+    background-color: #ccd5ae;
+    color: white;
+    padding: 5px 8px;
+}
+
+a:active{
+    background-color: #d47373;
+    color: white;
+}
+
+.button{
+    margin-top: 12px;
+    padding: 10px;
+    border: 2px solid #ccd5ae;
+    background-color: white;
+    color: #3b3b3b;
+    border-radius: 2px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button:hover{
+    background-color: #ccd5ae;
+    color: white;
+}
+
+.button:active{
+    background-color: #d47373;
+    color: white;
+    border-color: #d47373;
+}
+
+.clr{
+    clear: both;
+}
+
+#container{
+    width: 66%;
+    margin: 20px auto;
+}
+
+#headArea small{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+} 
+
+#underLine{
+    display: inline;
+    font-style: italic;
+}
+
+.box-1{
+    padding: 12px;
+    padding-top: 2px;
+    border: 2px solid hsl(52, 20%, 88%);
+    border-radius: 2px;
+    margin-right: 2%;
+}
+
+.box-2{
+    padding: 12px;
+    padding-top: 2px;
+    border: 2px solid hsl(52, 20%, 88%);
+    border-radius: 2px;
+    margin-left: 2%;
+}
+
+.box-2 h1{
+    background-color: hsl(43, 78%, 80%);
+}
+
+.box-2 small{
+    background-color: hsl(30, 50%, 68%);
+}
+
+#block{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    margin-top: 20px;
+    padding: 0px 44px;
+    padding-top: 0px;
+    border: 2px solid hsl(52, 20%, 88%);
+    border-radius: 2px;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.navbar ul{
+    padding: 0px;
+    list-style: none;
+    list-style-image: url('/images/bullet.png');
+    letter-spacing: 0.12em;
+    line-height: 3.2em;
+}
+
+.navbar li a{
+    padding: 5px 8px;
+}
+
+.navbar li:first-child a:hover{
+    background-color: hsl(51, 40%, 70%);
+}
+
+.navbar li:nth-child(2) a:hover{
+    background-color: hsl(184, 40%, 70%);
+}
+
+.navbar li:nth-child(3) a:hover{
+    background-color: hsl(113, 40%, 70%);
+}
+
+.navbar li:last-child a:hover{
+    background-color: hsl(276, 40%, 70%);
+}
+
+#except{
+    border: 0px;
+}
+
+.my-form{
+    margin-top: 20px;
+    padding: 50px;
+    border: 2px solid hsl(52, 20%, 88%);
+    border-radius: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 2%;
+
+}
+
+.my-form .form-group{
+    padding-bottom: 22px;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form .form-group input{
+    margin-top: 8px;
+    display: inline-block;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.my-form input[type='message']{
+    height: 100px;
+}
+
+.my-form{
+    float: left;
+    width: 64%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    float: right;
+    width: 32%;
+    box-sizing: border-box;
+}
+
+.insta{
+    margin: 0%;
+    width: 80px;
+    padding: 5px 8px;
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    text-align: center;
+    border-color: #ee67a0;
+
+}
+
+.insta:hover{
+    background-image: url('../images/instagram.png');
+    border-color: #ec3682;
+    background-size: 96px auto;
+    background-position: 0px;
+    color: hwb(0 0% 100% / 0);
+}
+
+.whatsapp{
+    margin: 0%;
+    width: 80px;
+    padding: 5px 8px;
+    position: fixed;
+    left: 10px;
+    bottom: 60px;
+    text-align: center;
+    border-color: #a8d382;
+}
+
+.whatsapp:hover{
+    background-image: url('../images/whatsapp.jpg');
+    background-size: 102px auto;
+    background-position: 0px;
+    color: hwb(0 0% 100% / 0);
+    border-color: #40e256;
+}

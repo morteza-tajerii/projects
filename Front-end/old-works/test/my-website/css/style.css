@@ -1,0 +1,130 @@
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.clr{
+    float: none;
+}
+#main-header{
+    background-color: #fff;
+}
+
+#navbar{
+    background-color: #000;
+
+}
+
+#navbar ul{
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 8px;
+}
+
+#navbar a:hover{
+    background-color: #FCA311;
+    color: #fff;
+}
+
+#navbar a:active{
+    background-color: hsl(204, 98%, 53%);
+}
+
+#showcase{
+    text-align: center;
+}
+
+#showcase h1{
+    background-color: #FCA311;
+    background-image: url('/images/showcase.jpg');
+    background-position: -400px;
+    min-height: 162px;
+    color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 1.5em;
+}
+
+#main{
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    width: 66%;
+    box-sizing: border-box;
+}
+
+#main h1{
+margin-top: 0px;
+
+}
+#sidebar{
+    float: right;
+    padding: 20px;
+    margin-top: 20px;
+    width: 34%;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+#main-footer{
+    text-align: center;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0%;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+thead th{
+    height: 40px;
+    border: 2px #E5E5E5 solid;
+
+}
+
+
+#musics table{
+    width: 100%;
+    margin: 30px 0px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#musics td{
+    padding: 10px 0px;
+    padding-top: 11px;
+    border-collapse: collapse;
+}
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
